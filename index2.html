@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp">
+    <button id="btn">click</button>
+    <p id="pera"></p>
+
+    <h2 id="head">0</h2>
+    <button id="but">click me!</button>
+</body>
+<script>
+    let btn = document.querySelector("#btn")
+    let display = document.querySelector("#inp")
+    let pera = document.querySelector("#pera")
+    btn.addEventListener("click", ()=>{
+        pera.innerHTML = display.value
+    })
+    let value = 0
+    const but = document.querySelector("#but")
+    let head = document.querySelector("#head")
+    but.addEventListener("click", ()=>{
+         value++
+         head.innerHTML = value
+    })
+
+       let i = 0
+    for (let i = 0; i <=10; i++) {
+        console.log(i)
+        for (let j = 0; j <= 10; j++) {
+            console.log(i + " * " + j + " = " + (i * j))
+            
+        }
+        
+    }
+        
+    let arr = {
+        email: "tanveeer.com"
+    }
+    if (!arr.email) {
+        console.log("WELLCOME TO OUR WEBSITE")
+        
+    } else{
+        console.log ("PLEASE ENTER YOUR EMAIL")
+    }
+
+
+    let month = "april"
+    switch (month) {
+        case"jan":
+            console.log("1")
+            
+            break;
+            case "fab":
+            console.log("2")
+            
+            break;
+            case "march":
+            console.log("3")
+            
+            break;
+            case "april":
+            console.log("4")
+            
+            break;
+            case 4:
+            console.log("5")
+            
+            break;
+            case 5:
+            console.log("6")
+            
+            break;
+            case 6:
+            console.log("7")
+            
+            break;
+    
+        default:
+            break;
+    }
+
+
+</script>
+</html>

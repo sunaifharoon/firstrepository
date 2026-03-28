@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(57, 57, 57);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background: rgb(43, 42, 42);
+            color: aliceblue;
+            height: 60px;
+            position: relative;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+            padding: 10px 15px;
+            align-items: center;
+            position: absolute;
+            left: 75%;
+            top: 15px;
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: aliceblue;
+            transition: .5s ease;
+        }
+
+        li a:hover {
+            color: yellow;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 320px;
+            height: 600px;
+            background-color: rgb(172, 172, 172);
+            border: 2px solid black;
+            border-radius: 5%;
+            align-items: center;
+            padding-top: 10px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .box p{
+            text-align: center;
+        }
+        .img {
+            width: 300px;
+            height: 300px;
+            border: 2px solid rgb(172, 172, 172);
+            border-radius: 5%;
+
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgb(205, 140, 0);
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src=""></script>
+    <nav class=" navbar">
+        <div class="logo"><img src="pic4.png" alt="" width="50px" height="50px"></div>
+        <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="pic5.jpg" class="d-block w-100" alt="img" height="900px">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>First slide label</h1>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="pic6.jpg" class="d-block w-100" alt="img" height="900px">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Second slide label</h1>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="pic7.jpg" class="d-block w-100" alt="img" height="900px">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Third slide label</h1>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <div class="card-container">
+        <div class="box">
+            <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pic3.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="pic8 (2).jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="pic8 (3).jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+            <h1>Sneakers</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dicta. Officia reiciendis quaerat
+                aliquam fuga!
+            </p>
+            <button class="btn" type="button">click Here</button>
+        </div>
+
+        <div class="box">
+            <img class="img" src="pic2.png" alt="img2">
+            <h1>Sneakers</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dicta. Officia reiciendis quaerat
+                aliquam fuga!
+            </p>
+            <button class="btn" type="button">click Here</button>
+        </div>
+
+        <div class="box">
+            <img class="img" src="pic3.png" alt="img3">
+            <h1>Sneakers</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dicta. Officia reiciendis quaerat
+                aliquam fuga!
+            </p>
+            <button class="btn" type="button">click Here</button>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
